@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a:active {
+      color: green;
+    }
+
+    input:focus {
+      border-color: red;
+    }
+
+    .box:focus-within {
+      background-color: lightblue;
+    }
+
+    #targetSection:target {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Dynamic Pseudo Classes in CSS</h2>
+
+<a href="https://www.example.com">Example Link</a>
+
+<br><br>
+
+<input type="text" placeholder="Focus on me">
+
+<br><br>
+
+<div class="box">
+  <input type="text" placeholder="Or focus on me">
+</div>
+
+<br><br>
+
+<a href="#targetSection">Go to Target Section</a>
+
+<div id="targetSection" style="height: 200px; width: 100%; border: 1px solid black;">
+  <p>Target Section</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bus Ticket Booking - Feedback</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #403f3f;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #eae6e6;
+    }
+    
+    .feedback-section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #3d3939;
+      color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+     
+    }
+    
+    .feedback-section h2 {
+      margin-top: 0;
+    }
+    
+    .feedback-section p {
+      margin-bottom: 20px;
+    }
+    
+    .feedback-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .feedback-form input[type="text"],
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .feedback-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="feedback-section">
+    <h1>Feedback</h1>
+    
+    <h2>We value your opinion</h2>
+    
+    <p>We would love to hear your feedback and suggestions to improve our service. Please fill out the form below:</p>
+    
+    <form class="feedback-form" action="submit_feedback.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="5" required></textarea>
+      
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </div>
+</body>
+</html>

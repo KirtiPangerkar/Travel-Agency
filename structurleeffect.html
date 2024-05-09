@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply background color to the root element */
+        :root {
+            background-color: #f0f0f0;
+        }
+
+        /* Make the 2nd list item red */
+        li:nth-child(2) {
+            color: red;
+        }
+
+        /* Make the last list item green */
+        li:nth-last-child(1) {
+            color: green;
+        }
+
+        /* Change background color of 2nd paragraph */
+        p:nth-of-type(2) {
+            background-color: #ff0000;
+        }
+
+        /* Add a border to 2nd last div */
+        div:nth-last-of-type(2) {
+            border: 2px solid #000000;
+        }
+
+        /* Increase font size of first child paragraph */
+        p:first-child {
+            font-size: 20px;
+        }
+
+        /* Decrease font size of last child paragraph */
+        p:last-child {
+            font-size: 18px;
+        }
+
+        /* Add padding to first div */
+        div:first-of-type {
+            padding: 10px;
+        }
+
+        /* Add padding to last div */
+        div:last-of-type {
+            padding: 20px;
+        }
+
+        /* Bold the only child */
+        p:only-child {
+            font-weight: bold;
+        }
+
+        /* Add margin to only child div */
+        div:only-of-type {
+            margin: 10px;
+        }
+
+        /* Hide empty divs */
+        div:empty {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div element</div>
+    <div>Another div element</div>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <p>This is a paragraph that is an only child in its parent element.</p>
+    <div></div>
+</body>
+</html>

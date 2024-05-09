@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Hide elements with class "hide" */
+        .hide {
+            display: none;
+        }
+
+        /* Block level elements */
+        .block {
+            display: block;
+            margin-bottom: 10px;
+            background-color: #cccccc;
+            width: 200px;
+            height: 50px;
+        }
+
+        /* Inline elements */
+        .inline {
+            display: inline;
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+
+        /* Inline block elements */
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: #00ff00;
+            margin: 10px;
+        }
+
+        /* Flex container */
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* Grid container */
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+
+        /* Grid and flex items */
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: #0000ff;
+            color: #ffffff;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hide">This text will be hidden.</div>
+    
+    <div class="block">This is a block level element.</div>
+
+    <span class="inline">This</span>
+    <span class="inline">is</span>
+    <span class="inline">inline.</span>
+
+    <div class="inline-block">Inline</div>
+    <div class="inline-block">Block</div>
+    <div class="inline-block">Elements</div>
+
+    <div class="flex">
+        <div class="item">Flex</div>
+        <div class="item">Item</div>
+        <div class="item">Example</div>
+    </div>
+
+    <div class="grid">
+        <div class="item">Grid</div>
+        <div class="item">Item</div>
+        <div class="item">Example</div>
+    </div>
+</body>
+</html>
